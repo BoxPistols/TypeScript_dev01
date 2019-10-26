@@ -14,7 +14,11 @@ enum Signal {
 let result: Signal;
 console.log(Signal[5]);
 
-function add(a: number, b: number):number {
-  return a + b;
+function add(a: number, b?: number):number {
+  if(b){
+    return a + b;
+  }else{
+    return a + a;
+  }
 }
-console.log(add(12, 90));
+console.log(add(12));

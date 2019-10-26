@@ -13,6 +13,11 @@ var Signal;
 var result;
 console.log(Signal[5]);
 function add(a, b) {
-    return a + b;
+    if (b) {
+        return a + b;
+    }
+    else {
+        return a + a;
+    }
 }
-console.log(add(12, 90));
+console.log(add(12));
