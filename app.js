@@ -12,12 +12,9 @@ var Signal;
 })(Signal || (Signal = {}));
 var result;
 console.log(Signal[5]);
+// 初期値
 function add(a, b) {
-    if (b) {
-        return a + b;
-    }
-    else {
-        return a + a;
-    }
+    if (b === void 0) { b = 13; }
+    return a + b;
 }
-console.log(add(12));
+console.log(add(12, 100));
