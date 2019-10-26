@@ -1,5 +1,10 @@
 // const add = (a: number, b: number): number => {
 //   return a + b;
 // }
-var add = function (a, b) { return a + b; };
-console.log(add(5, 12));
+function add(a, b) {
+    if (typeof a === "string" && typeof b === "string") {
+        return a + " " + b;
+    }
+    return a + b;
+}
+console.log(add("Moge", "bbbb"));
