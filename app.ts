@@ -13,4 +13,5 @@ function add(a:any, b:any){
   }
   return a + b
 }
-console.log(add("Moge", "bbbb"));
+const el = document.querySelector('h1');
+el.innerHTML = (add("Moge", "ddd"));
