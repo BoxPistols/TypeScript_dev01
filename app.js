@@ -1,1 +1,1 @@
-function add(e,d){return"string"==typeof e&&"string"==typeof d?e+" "+d:e+d}var el=document.querySelector("h1");el.innerHTML=add("Moge","ddd");
+var add=function(e,n){return e+n},el=document.querySelector("h1");el.innerHTML=add(2,12);
